@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: POSITION_ABC_BANK
+  - name: REF_POSITION_ABC_BANK
     description: Positions we have in the ABC Bank portfolio.
 
     columns:

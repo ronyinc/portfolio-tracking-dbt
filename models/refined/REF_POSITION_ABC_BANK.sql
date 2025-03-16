@@ -3,7 +3,7 @@ WITH
 
 current_from_snapshot as (
 
-    SELECT *
+    SELECT * EXCLUDE (DBT_SCD_ID, DBT_VALID_TO, DBT_VALID_FROM, DBT_UPDATED_AT)
     FROM    {{ref('SNSH_ABC_BANK_POSITION')}} -- testing
     WHERE DBT_VALID_TO is null
 

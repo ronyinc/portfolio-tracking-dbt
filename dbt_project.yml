@@ -64,4 +64,9 @@ seeds:
       +post-hook:
         - "UPDATE {{ this }} SET LOAD_TS = '{{ run_started_at }}' WHERE LOAD_TS is null"
       +column_types:
-        LOAD_TS: TIMESTAMP  
+        LOAD_TS: TIMESTAMP
+    ABC_COUNTRY_INFO:
+      +post-hook:
+        - "UPDATE {{ this }} SET LOAD_TS = '{{ run_started_at }}' WHERE LOAD_TS is null"
+      +column_types:
+        LOAD_TS: TIMESTAMP

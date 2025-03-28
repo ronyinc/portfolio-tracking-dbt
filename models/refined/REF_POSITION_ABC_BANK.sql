@@ -3,10 +3,10 @@ WITH
 
 current_from_snapshot as (
 
-    SELECT * EXCLUDE (DBT_SCD_ID, DBT_VALID_TO, DBT_VALID_FROM, DBT_UPDATED_AT)
-    FROM    {{ref('SNSH_ABC_BANK_POSITION')}} -- testing
-    WHERE DBT_VALID_TO is null
-
+    {{ current_from_snapshot(
+        snsh_ref = ref('SNSH_ABC_BANK_POSITION'),
+        output_load_ts = false
+    ) }}
 )
 
 

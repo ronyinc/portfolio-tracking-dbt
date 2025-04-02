@@ -23,8 +23,8 @@ src_data as (
 hashed as (
     SELECT
         
-          {{ dbt_utils.surrogate_key(['ACCOUNT_CODE', 'SECURITY_CODE']) }} as POSITION_HKEY
-        , {{ dbt_utils.surrogate_key([ 'ACCOUNT_CODE', 'SECURITY_CODE',
+          {{ dbt_utils.generate_surrogate_key(['ACCOUNT_CODE', 'SECURITY_CODE']) }} as POSITION_HKEY
+        , {{ dbt_utils.generate_surrogate_key([ 'ACCOUNT_CODE', 'SECURITY_CODE',
                                    'SECURITY_NAME', 'EXCHANGE_CODE', 'REPORT_DATE',
                                    'QUANTITY', 'COST_BASE', 'POSITION_VALUE', 'CURRENCY_CODE' ])
            }} as POSITION_HDIFF  

@@ -45,10 +45,10 @@ hashed as (
 
     SELECT
         
-         {{ dbt_utils.surrogate_key(['SECURITY_CODE']) }} as SECURITY_HKEY
+         {{ dbt_utils.generate_surrogate_key(['SECURITY_CODE']) }} as SECURITY_HKEY
 
         
-        , {{ dbt_utils.surrogate_key([ 'SECURITY_CODE', 'SECURITY_NAME', 'SECTOR_NAME', 'INDUSTRY_NAME', 'COUNTRY_CODE', 'EXCHANGE_CODE'])
+        , {{ dbt_utils.generate_surrogate_key([ 'SECURITY_CODE', 'SECURITY_NAME', 'SECTOR_NAME', 'INDUSTRY_NAME', 'COUNTRY_CODE', 'EXCHANGE_CODE'])
            }} as SECURITY_HDIFF 
 
         , * EXCLUDE LOAD_TS

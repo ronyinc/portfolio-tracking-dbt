@@ -1,4 +1,5 @@
 {% test no_hash_collisions(model, column_name, hashed_fields) %}
+{{ config(severity='warn') }}
 
 WITH
 

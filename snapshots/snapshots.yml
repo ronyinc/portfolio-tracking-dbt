@@ -6,6 +6,8 @@ snapshots:
         tests:
           - no_hash_collisions:
               hashed_fields: ACCOUNT_CODE, SECURITY_CODE
+              config:
+                severity: error
       - name: POSITION_HDIFF
         tests:
           - no_hash_collisions:

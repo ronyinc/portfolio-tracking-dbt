@@ -5,6 +5,15 @@ sources:
     schema: "{{target.schema}}_SEED_DATA"
     tables:
       - name: ABC_BANK_SECURITY_INFO
+        columns:
+          - name: SECURITY_CODE
+            tests:
+              - not_null
+              - unique
+          - name: SECURITY_NAME
+            tests:
+              - not_null
+              - not_empty
       - name: ABC_COUNTRY_INFO
 
       

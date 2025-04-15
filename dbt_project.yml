@@ -70,3 +70,8 @@ seeds:
         - "UPDATE {{ this }} SET LOAD_TS = '{{ run_started_at }}' WHERE LOAD_TS is null"
       +column_types:
         LOAD_TS: TIMESTAMP
+
+tests:
+  portfolio_tracking:
+    +enabled: true
+    +severity: warn        

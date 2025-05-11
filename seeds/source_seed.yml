@@ -2,6 +2,12 @@ version: 2
 
 sources:
   - name: seeds
+    freshness: 
+      warn_after:
+        count: 1
+        period: day
+    loaded_at_field: LOAD_TS
+    
     schema: "{{target.schema}}_SEED_DATA"
     tables:
       - name: ABC_BANK_SECURITY_INFO

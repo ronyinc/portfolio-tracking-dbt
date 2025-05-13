@@ -26,7 +26,7 @@ default_record as (
         , 'Missing' as SECURITY_NAME
         , 'Missing' as SECTOR_NAME
         , 'Missing' as INDUSTRY_NAME
-        , '-5'      as COUNTRY_CODE
+        , '-6'      as COUNTRY_CODE
         , '-1'      as EXCHANGE_CODE
         , '2020-01-01' as LOAD_TS_UTC
         , 'System.DefaultKey' as RECORD_SOURCE

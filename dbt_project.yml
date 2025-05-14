@@ -58,7 +58,7 @@ snapshots:
 
 
 seeds:
-  +schema: seed_data
+  +schema: "{{ target.schema }}"
   portfolio_tracking:
     ABC_BANK_SECURITY_INFO:
       +post-hook:

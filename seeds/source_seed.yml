@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: seeds
-    schema: "{{target.schema}}_SEED_DATA"
+    schema: "{{ target.schema }}"
     tables:
       - name: ABC_BANK_SECURITY_INFO
         columns:

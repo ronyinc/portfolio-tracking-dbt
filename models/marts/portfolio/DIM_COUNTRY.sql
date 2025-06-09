@@ -1,1 +1,1 @@
-select * from {{ref('REF_ABC_COUNTRY_INFO')}}
+select * from {{ref('REF_ABC_COUNTRY_INFO')}} -- adding just comments. no changes

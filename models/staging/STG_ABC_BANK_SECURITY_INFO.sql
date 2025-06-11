@@ -26,7 +26,7 @@ default_record as (
         , 'Missing' as SECURITY_NAME
         , 'Missing' as SECTOR_NAME
         , 'Missing' as INDUSTRY_NAME
-        , '-8'      as COUNTRY_CODE -- adding comments to test slim0-ci-job v2
+        , '-7'      as COUNTRY_CODE -- adding comments to the branch feature-test-2025-06-06
         , '-1'      as EXCHANGE_CODE
         , '2020-01-01' as LOAD_TS_UTC
         , 'System.DefaultKey' as RECORD_SOURCE
